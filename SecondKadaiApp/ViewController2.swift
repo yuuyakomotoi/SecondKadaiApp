@@ -17,6 +17,8 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(mozi)
+        
         Label.text = ("こんにちは、\(mozi)さん")
         
         // Do any additional setup after loading the view.

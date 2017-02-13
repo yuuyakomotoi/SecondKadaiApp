@@ -22,10 +22,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J8r-cM-jwH">
+                                <rect key="frame" x="90" y="269" width="140" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VF-Mw-REJ">
+                                <rect key="frame" x="104" y="167" width="113" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiN-78-NQn">
-                                <rect key="frame" x="273" y="270" width="31" height="26"/>
+                                <rect key="frame" x="145" y="391" width="31" height="26"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="31" id="NQN-AD-Yqc"/>
+                                    <constraint firstAttribute="width" constant="31" id="cyB-wr-fq2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="次へ"/>
@@ -33,28 +45,16 @@
                                     <segue destination="xJ8-rS-N38" kind="show" id="KQg-qG-gj5"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J8r-cM-jwH">
-                                <rect key="frame" x="125" y="268" width="140" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VF-Mw-REJ">
-                                <rect key="frame" x="0.0" y="278" width="113" height="12"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5VF-Mw-REJ" firstAttribute="baseline" secondItem="J8r-cM-jwH" secondAttribute="baseline" id="3a4-Iv-5yc"/>
-                            <constraint firstItem="EiN-78-NQn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9FM-6l-YgL"/>
-                            <constraint firstItem="J8r-cM-jwH" firstAttribute="centerY" secondItem="EiN-78-NQn" secondAttribute="centerY" id="gec-ve-WR7"/>
-                            <constraint firstItem="5VF-Mw-REJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k3D-1s-1vG"/>
-                            <constraint firstItem="5VF-Mw-REJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="miM-ME-m8S"/>
-                            <constraint firstItem="EiN-78-NQn" firstAttribute="leading" secondItem="J8r-cM-jwH" secondAttribute="trailing" constant="8" symbolic="YES" id="uON-JF-TZt"/>
-                            <constraint firstItem="J8r-cM-jwH" firstAttribute="leading" secondItem="5VF-Mw-REJ" secondAttribute="trailing" constant="12" id="wKE-mv-Opf"/>
+                            <constraint firstItem="5VF-Mw-REJ" firstAttribute="centerX" secondItem="J8r-cM-jwH" secondAttribute="centerX" id="1z6-5k-rkj"/>
+                            <constraint firstItem="J8r-cM-jwH" firstAttribute="top" secondItem="5VF-Mw-REJ" secondAttribute="bottom" constant="90" id="4O8-ag-Olq"/>
+                            <constraint firstItem="J8r-cM-jwH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DHz-lf-joy"/>
+                            <constraint firstItem="5VF-Mw-REJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LUf-Za-Wyy"/>
+                            <constraint firstItem="J8r-cM-jwH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="aTq-fV-J2l"/>
+                            <constraint firstItem="J8r-cM-jwH" firstAttribute="centerX" secondItem="EiN-78-NQn" secondAttribute="centerX" id="eaa-oK-vUl"/>
+                            <constraint firstItem="EiN-78-NQn" firstAttribute="top" secondItem="J8r-cM-jwH" secondAttribute="bottom" constant="92" id="hm6-bB-Tsu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -78,7 +78,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDY-Fo-gg1">
-                                <rect key="frame" x="274" y="270.5" width="30" height="26"/>
+                                <rect key="frame" x="145" y="394" width="30" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
@@ -86,7 +86,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPt-fl-YsC">
-                                <rect key="frame" x="139" y="273.5" width="42" height="21"/>
+                                <rect key="frame" x="139" y="274" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -94,10 +94,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uDY-Fo-gg1" firstAttribute="trailing" secondItem="tpp-tS-5Oh" secondAttribute="trailingMargin" id="0iX-px-ea7"/>
-                            <constraint firstItem="dPt-fl-YsC" firstAttribute="centerY" secondItem="tpp-tS-5Oh" secondAttribute="centerY" id="Agn-IB-sat"/>
-                            <constraint firstItem="dPt-fl-YsC" firstAttribute="centerX" secondItem="tpp-tS-5Oh" secondAttribute="centerX" id="ra6-f6-ZvX"/>
-                            <constraint firstItem="dPt-fl-YsC" firstAttribute="centerY" secondItem="uDY-Fo-gg1" secondAttribute="centerY" id="w4D-iX-JPE"/>
+                            <constraint firstItem="dPt-fl-YsC" firstAttribute="centerX" secondItem="uDY-Fo-gg1" secondAttribute="centerX" id="B1H-FS-UaD"/>
+                            <constraint firstItem="dPt-fl-YsC" firstAttribute="centerX" secondItem="tpp-tS-5Oh" secondAttribute="centerX" id="ea1-M2-Hex"/>
+                            <constraint firstItem="dPt-fl-YsC" firstAttribute="centerY" secondItem="tpp-tS-5Oh" secondAttribute="centerY" id="gt1-AU-sCS"/>
+                            <constraint firstItem="uDY-Fo-gg1" firstAttribute="top" secondItem="dPt-fl-YsC" secondAttribute="bottom" constant="99" id="vbU-i8-ftv"/>
                         </constraints>
                     </view>
                     <connections>
